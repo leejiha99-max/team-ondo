@@ -103,7 +103,7 @@ function App() {
 
   return (
     <TimeThemeContainer>
-      <h1 className="app-title">날씨 앱 이름을 넣어주세요.</h1>
+      <h1 className="app-title">ONDO</h1>
 
       {/* 현재 날짜/요일/시간 표시 */}
       <DateTimeDisplay />
@@ -117,15 +117,15 @@ function App() {
         onCityClick={handleCityClick}
       />
 
-      <SearchBox onSearch={handleSearch} />
+      
 
       {error && <p className="error-message">{error}</p>}
 
       {weather ? (
         <div className="weather-card">
-          <p className="weather-info">📍 도시: {searchCity}</p>
-          <p className="weather-info">🌡️ 온도: {weather.main.temp}°C</p>
-          <p className="weather-info">🌥️ 상태: {weather.weather[0].description}</p>
+          <p className="weather-info"><img src="./public/lucide_map-pin.svg" alt="" /> {searchCity}</p>
+          <p className="weather-info"><img src="./public/solar_temperature-linear.svg" alt="" />{weather.main.temp}°C</p>
+          <p className="weather-info"><img src="./public/ph_cloud-sun-thin.svg" alt="" /> {weather.weather[0].description}</p>
         </div>
       ) : (
         <p className="loading-message">날씨 정보를 불러오는 중...</p>
