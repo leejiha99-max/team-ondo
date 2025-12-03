@@ -10,15 +10,15 @@
 
 .app-container {
   padding: 20px;
-  max-width: 800px;
+  max-width: 1920px;
   margin: 0 auto;
   background:none;
 }
 .app-container.day {
   padding: 20px;
-  max-width: 800px;
+  max-width: 1920px;
   margin: 0 auto;
-  background:url("/public/day.jpg") no-repeat 50% 50%;
+  background:url("/public/bg-light.png") no-repeat 50% 50%;
 }
 
 .app-title {
