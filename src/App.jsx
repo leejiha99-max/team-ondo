@@ -125,7 +125,7 @@ function App() {
         <div className="weather-card">
           <p className="weather-info"><img src="./public/lucide_map-pin.svg" alt="" /> {searchCity}</p>
           <p className="weather-info"><img src="./public/solar_temperature-linear.svg" alt="" />{weather.main.temp}°C</p>
-          <p className="weather-info"><img src="./public/ph_cloud-sun-thin.svg" alt="" /> {weather.weather[0].description}</p>
+          <p className="weather-info">{weather.weather[0].description}</p>
         </div>
       ) : (
         <p className="loading-message">날씨 정보를 불러오는 중...</p>

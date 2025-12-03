@@ -1,4 +1,7 @@
 
+body{
+  margin: 0;
+}
 
 .card {
   padding: 2em;
@@ -64,6 +67,11 @@
     color: white;
 }
 
+.app-container h1 {
+    color: white;
+    text-align: center;
+}
+
 
 @media (max-width:400px){
   .app-container.day h1 {
@@ -82,8 +90,8 @@
     /* text-align: right; */
     right: 0;
     position: absolute;
-    right: 40px;
-    top: 30px;
+    right: 32px;
+    top: 43px;
     color: white;
 }
 }
